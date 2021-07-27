@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.5;
 
-import "./interfaces/yearn/RegistryApi.sol";
+import "./yearn/interfaces/RegistryApi.sol";
 
 contract MockYearnRegistry is RegistryAPI {
 
