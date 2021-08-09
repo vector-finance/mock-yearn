@@ -1,5 +1,7 @@
 import "@nomiclabs/hardhat-etherscan";
 import "@nomiclabs/hardhat-waffle";
+import "@nomiclabs/hardhat-vyper";
+import "@openzeppelin/hardhat-upgrades";
 import "dotenv/config";
 import "hardhat-typechain";
 import { HardhatUserConfig } from "hardhat/types";
@@ -7,6 +9,9 @@ import { HardhatUserConfig } from "hardhat/types";
 const config: HardhatUserConfig = {
   solidity: {
     version: "0.8.5",
+  },
+  vyper: {
+    version: "0.2.12",
   },
   networks: {
     rinkeby: {
